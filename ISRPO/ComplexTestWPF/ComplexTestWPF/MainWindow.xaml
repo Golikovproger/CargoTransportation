@@ -1,0 +1,31 @@
+﻿<Window x:Class="ComplexTestWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComplexTestWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="301" Width="622">
+    <Grid Background="Olive">
+
+        <Button x:Name="ButPlus"  Click="ButPlusClick" Content="+" HorizontalAlignment="Left" Margin="216,151,0,0" VerticalAlignment="Top" Width="50" Height="25"/>
+        <Button x:Name="ButMinus"  Click="ButMinusClick" Content="-" HorizontalAlignment="Left" Margin="348,151,0,0" VerticalAlignment="Top" Width="51" Height="25"/>
+        <Button x:Name="ButMulti"  Click="ButMultiClick" Content="*" HorizontalAlignment="Left" Margin="348,193,0,0" VerticalAlignment="Top" Width="52" Height="24"/>
+        <Button x:Name="ButDell"  Click="ButDellClick" Content="/" HorizontalAlignment="Left" Margin="214,193,0,0" VerticalAlignment="Top" Width="52" Height="24"/>
+
+        <TextBox x:Name="FirstA" HorizontalAlignment="Left"  Margin="191,40,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="FirstB" HorizontalAlignment="Left"  Margin="339,40,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+
+        <TextBox x:Name="SecondA" HorizontalAlignment="Left"  Margin="191,110,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SecondB" HorizontalAlignment="Left"  Margin="339,110,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Первое комплексное число" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Width="168"/>
+        <Label Content="Второе комплексное число" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="168"/>
+        <Label Content="Вещественная часть " HorizontalAlignment="Left" Margin="191,9,0,0" VerticalAlignment="Top"/>
+        <Label Content="Мнимая часть " HorizontalAlignment="Left" Margin="353,9,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabResult" Content="" HorizontalAlignment="Left" Margin="301,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.6,0.502"/>
+        <Label Content="Вещественная часть " HorizontalAlignment="Left" Margin="191,79,0,0" VerticalAlignment="Top"/>
+        <Label Content="Мнимая часть " HorizontalAlignment="Left" Margin="353,79,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
